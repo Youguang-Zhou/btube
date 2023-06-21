@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply select-none;
+	}
+
+	p {
+		@apply whitespace-pre-line;
+	}
+
+	p,
+	h1 {
+		@apply select-text;
+	}
+}
+
+@layer components {
+	.main-container {
+		/* flex 在 .drawer-content 里*/
+		@apply bg-[whitesmoke] p-4 lg:p-8;
+	}
+
+	.main-container-title {
+		@apply text-2xl text-gray-700 lg:text-3xl;
+	}
+
+	.video-container {
+		@apply grid grid-cols-2 gap-4 md:gap-6 md:grid-cols-3 xl:grid-cols-4;
+	}
+}
